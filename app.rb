@@ -28,11 +28,14 @@ class App < Sinatra::Base
   get '/:operation/:number1/:number2' do 
     number1 = params[:number1]
     number2 = params[:number2]
+    answer = ''
     
     case params[:operation]
     when 'add'
-      
-    
+      answer = number1 + number 2
+    when 'subtract'
+    when 'multiply'
+    when 'divide'
     end
   end
 end
