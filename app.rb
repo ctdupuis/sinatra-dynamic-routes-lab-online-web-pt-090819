@@ -21,5 +21,5 @@ class App < Sinatra::Base
     answer
   end
   
-  
+  get '/say/:word1/:word2/'
 end
