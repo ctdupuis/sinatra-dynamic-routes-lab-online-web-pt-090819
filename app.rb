@@ -4,7 +4,7 @@ class App < Sinatra::Base
   # Write your code here!
 
   get '/reversename/:name' do
-    @name = params[:name].to_a.map{|a| a.reverse}.to_s
+    @name = params[:name]
     "#{@name}"
   end
 end
